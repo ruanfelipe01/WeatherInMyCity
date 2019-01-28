@@ -1,4 +1,4 @@
-<div class="containte">
+<div class="container card">
   <h1 *ngIf="myWeather.city">{{myWeather.city}}</h1>
   <h2 *ngIf="myWeather.temperature">{{myWeather.temperature}}&deg; C</h2>
   <div class="img" *ngIf="myWeather.icon">
@@ -7,4 +7,9 @@
   <h3 *ngIf="myWeather.weatherKind">{{myWeather.weatherKind}}</h3>
   <h4 *ngIf="myWeather.tempMin">Min: {{myWeather.tempMin}}&deg; C</h4>
   <h4 *ngIf="myWeather.tempMax">Max: {{myWeather.tempMax}}&deg; C</h4>
+
+  <form *ngIf="myWeather.city">
+      <input type="text" ngModel name="city" placeholder="Buscar outra cidade">
+      <button name="button">Pesquisar</button>
+    </form>
 </div>

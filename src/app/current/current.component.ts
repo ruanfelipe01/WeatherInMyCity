@@ -16,11 +16,11 @@ export class CurrentComponent implements OnInit {
   constructor(private ws:WeatherService, private route:ActivatedRoute) { }
 
   ngOnInit() {
-this.route.data.subscribe(
-  (data:{myWeather:CurrentWeather}) => {
-      this.myWeather = data.myWeather;
-    }
-  );
+    this.route.data.subscribe(
+      (data:{myWeather:CurrentWeather}) => {
+        this.myWeather = data.myWeather;
+      }
+    );
   }
 
 }

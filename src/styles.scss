@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+$bg-color: #7ECCB6;
+$text-color: #7ebbcc;
+html {
+    background-color: $bg-color;
+}
+body {
+    margin: 0;
+}
+
+.container.card {
+    width: 500px;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    color: #325148;
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    background: #71b7a3;
+}
+
+button {
+    border-radius: 0;
+    border: none;
+    background: #325148;
+    color: white;
+    padding: 5px;
+    height: 35px;
+}
+
+input {
+    border: none;
+    background: #DDD;
+    color: white;
+    padding: 5px;
+    height: 25px;
+    width:300px
+}

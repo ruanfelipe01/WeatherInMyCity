@@ -24,11 +24,11 @@ export class WeatherService {
             console.log(data);
             this.myWeather = new CurrentWeather(
                                     data.name,
-                                    data.main.temp,
+                                    parseInt(data.main.temp),
                                     data.weather[0].icon,
                                     data.weather[0].description,
-                                    data.main.temp_max, 
-                                    data.main.temp_min);
+                                    parseInt(data.main.temp_max), 
+                                    parseInt(data.main.temp_min));
               res(this.myWeather);
           }
         )
