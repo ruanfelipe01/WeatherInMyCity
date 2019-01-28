@@ -35,4 +35,8 @@ export class WeatherService {
       })
     })
   }
+
+  cityWeather(city:string){
+    return this.http.get(`https://api.openweathermap.org/data/2.5/find?q=${city}&appid=7833973f510e0b7d953c2393864291ae&units=metric`).map((response:Response) => response.json());
+  }
 }

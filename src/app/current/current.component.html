@@ -8,7 +8,7 @@
   <h4 *ngIf="myWeather.tempMin">Min: {{myWeather.tempMin}}&deg; C</h4>
   <h4 *ngIf="myWeather.tempMax">Max: {{myWeather.tempMax}}&deg; C</h4>
 
-  <form *ngIf="myWeather.city">
+  <form *ngIf="myWeather.city" (ngSubmit)="onSubmit(form)" #form="ngForm">
       <input type="text" ngModel name="city" placeholder="Buscar outra cidade">
       <button name="button">Pesquisar</button>
     </form>
